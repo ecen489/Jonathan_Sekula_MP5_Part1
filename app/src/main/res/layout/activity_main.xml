@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.mp5_part1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghetto Spotify"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="30sp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mockingbird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mockingbird"/>
+
+        <RadioButton
+            android:id="@+id/ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ride"/>
+
+        <RadioButton
+            android:id="@+id/walkingthewire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking the Wire"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15sp">
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:src="@drawable/baseline_skip_previous_black_48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="PreviousNext"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:src="@drawable/baseline_play_arrow_black_48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="PlayPause"/>
+
+        <ImageButton
+            android:id="@+id/next"
+            android:src="@drawable/baseline_skip_next_black_48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="PreviousNext"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
